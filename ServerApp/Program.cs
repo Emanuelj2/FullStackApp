@@ -25,7 +25,7 @@ var app = builder.Build();
 
 app.UseCors("AllowBlazor");
 
-app.MapGet("/api/products", () =>
+app.MapGet("/api/productslist", () =>
 {
 
     return new[]
