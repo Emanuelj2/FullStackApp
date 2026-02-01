@@ -32,9 +32,21 @@ app.MapGet("/api/productslist", () =>
 
     {
 
-        new { Id = 1, Name = "Laptop", Price = 1200.50, Stock = 25 },
+        new { 
+            Id = 1,
+            Name = "Laptop",
+            Price = 1200.50,
+            Stock = 25,
+            Category = new {Id = 1, Name = "Electronics"}
+        },
 
-        new { Id = 2, Name = "Headphones", Price = 50.00, Stock = 100 }
+        new {
+            Id = 2,
+            Name = "Headphones",
+            Price = 50.00,
+            Stock = 100,
+            Category = new {Id = 1, Name = "Electronics"}
+        },
 
     };
 
